@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Base ---------- */
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-night-950 text-ink font-body antialiased;
+  }
+  /* Light mode */
+  html:not(.dark) body { @apply bg-[#F6F5F1] text-[#1B2233]; }
+  html:not(.dark) .surface { @apply bg-white border-black/10; }
+  html:not(.dark) .text-ink-muted { color: #5A657D; }
+
+  ::selection { @apply bg-copper-500/30 text-ink; }
+  html:not(.dark) ::selection { color: #1B2233; }
+
+  /* Visible keyboard focus */
+  :focus-visible {
+    outline: 2px solid #D98E32;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    html { scroll-behavior: auto; }
+  }
+}
+
+@layer components {
+  .container-site { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
+  .surface { @apply bg-night-800/70 border border-white/[0.06] rounded-2xl; }
+  /* Silkscreen-style section label, e.g. "U1 — ABOUT" */
+  .refdes {
+    @apply font-mono text-xs tracking-[0.25em] uppercase text-copper-400;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition
+           focus-visible:outline focus-visible:outline-2 focus-visible:outline-copper-400;
+  }
+  .btn-primary { @apply btn bg-copper-500 text-night-950 hover:bg-copper-400 shadow-glow; }
+  .btn-ghost { @apply btn border border-white/15 text-ink hover:border-copper-400/60 hover:text-copper-300; }
+  html:not(.dark) .btn-ghost { @apply border-black/15 text-[#1B2233] hover:text-copper-600; }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-white/10 bg-white/[0.04]
+           px-3 py-1 font-mono text-[11px] text-ink-muted;
+  }
+  html:not(.dark) .chip { @apply border-black/10 bg-black/[0.04]; }
+}
