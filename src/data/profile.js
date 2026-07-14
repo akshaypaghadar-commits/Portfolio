@@ -16,7 +16,8 @@ export const profile = {
     'PCB Designer',
   ],
   tagline:
-    'Final-year Electronics Engineering student designing embedded, IoT and robotic systems from concept to field deployment — national award winner, two-time patent holder, and builder of an AUV that placed 6th at SAUVC 2025, Singapore.',
+   tagline:
+    'Electronics Engineering graduate specializing in embedded firmware, PCB design and IoT product development — national award winner, four-time patent filer, and builder of an AUV that placed 6th at SAUVC 2025, Singapore.',
   photo: '/images/profile-hero.jpg', // your photo (background removed — see scripts/remove_bg.py)
   location: 'Mendarda, Junagadh, Gujarat, India',
   email: 'akshaypaghadar7@gmail.com',
@@ -41,9 +42,9 @@ export const stats = [
 
 export const about = {
   summary: [
-    'I am a final-year B.Tech Electronics Engineering student at Gujarat Technological University with hands-on experience designing embedded, IoT and robotic systems from concept to field deployment — hardware that solves real problems in agriculture, safety and marine robotics.',
-    'As team lead, I designed and built a cost-effective autonomous underwater vehicle with LoRa wireless communication, real-time surveillance and 6-DOF maneuverability. It won the national Robofest 4.0 competition as runner-up (₹10 lakh prize), placed 6th at SAUVC 2025 in Singapore against 20+ international teams, and earned a design patent and a utility patent in India. My final-semester industrial project — a low-cost smart three-phase motor automation system — won the BVM Project Expo and became a published research paper.',
-    'I am skilled in PCB design, firmware development and LoRa communication, with additional grounding in RTL-to-GDSII and digital SoC design using open-source EDA tools. Currently seeking embedded systems, firmware or robotics engineering roles — or a Master\u2019s program — in Europe.',
+    'I am an Electronics Engineering graduate (B.Tech 2026, Gujarat Technological University) with hands-on experience designing embedded, IoT and robotic systems from concept to field deployment — hardware that solves real problems in agriculture, safety and marine robotics.',   
+   'As team lead, I designed and built a cost-effective autonomous underwater vehicle with LoRa wireless communication, real-time surveillance and 6-DOF maneuverability. It won the national Robofest 4.0 competition as runner-up (₹10 lakh prize), placed 6th at SAUVC 2025 in Singapore against 20+ international teams, and earned a design patent and a utility patent in India. My final-semester industrial project — a low-cost smart three-phase motor automation system — won the BVM Project Expo and became a published research paper.',
+    'I am skilled in PCB design, firmware development and LoRa communication, with additional grounding in RTL-to-GDSII and digital SoC design using open-source EDA tools. Currently seeking embedded systems, firmware or robotics engineering roles where I can build reliable, field-ready hardware.',
   ],
 };
 
