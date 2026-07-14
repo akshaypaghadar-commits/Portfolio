@@ -15,7 +15,6 @@ export const profile = {
     'IoT Systems Designer',
     'PCB Designer',
   ],
-  tagline:
    tagline:
     'Electronics Engineering graduate specializing in embedded firmware, PCB design and IoT product development — national award winner, four-time patent filer, and builder of an AUV that placed 6th at SAUVC 2025, Singapore.',
   photo: '/images/profile-hero.jpg', // your photo (background removed — see scripts/remove_bg.py)
